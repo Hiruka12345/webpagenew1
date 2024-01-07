@@ -1,0 +1,178 @@
+
+<html>
+    <body>
+
+        <p><button class="button" onclick="window.location.href='http://127.0.0.1:5500/index.html';"><<<<<<<< Previous page</button></p>
+
+
+          <div class="down-section">
+
+<div class="about-section">
+    <h1>Hello Guys!</h1>
+
+    <p>Welcome to Artistic Endeavors, where creativity meets excellence. 
+        Situated at the crossroads of drama, art, music, sports, and more, our university stands as a beacon for aspiring artists, athletes, and innovators.
+        Founded on the principles of nurturing talent and fostering innovation, Artistic Endeavors has been a cornerstone in the realm of arts education. 
+        With a rich history spanning decades, we've consistently produced industry leaders, award-winning artists, and groundbreaking performers.
+    </p>
+  </div>
+</div>
+  <h2 style="text-align:center">Our Team</h2>
+  <div class="row">
+    <div class="column">
+      <div class="card">
+        <img src="Images/360_F_365455586_C6aPLlomYMOKSHbeARjybRbEZcnEKNoM.jpeg" alt="Jane" style="width:100%">
+        <div class="container">
+          <h2>Milly Rose</h2>
+          <p class="title">CEO & Founder</p>
+          <p>Milly Rose, CEO of Artistic Endeavors, leads with creativity, vision, and passion. Her innovative approach transforms ideas into captivating artistry.</p>
+          <p>Rose@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="Images/pro1.webp" alt="Mike" style="width:100%">
+        <div class="container">
+          <h2>Jane Griff</h2>
+          <p class="title">Assistant Director</p>
+          <p>Jane Griff, the Assistant Director of Artistic Endeavors, oversees creativity, fosters innovation, curates experiences, and elevates artistic visions.</p>
+          <p>mJane@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  
+    <div class="column">
+      <div class="card">
+        <img src="Images/pro2.jpeg" alt="John" style="width:100%">
+        <div class="container">
+          <h2>Peter Rodge</h2>
+          <p class="title">Art Directorr</p>
+          <p>Peter Rodege, as Art Director at Artistic Endeavors, orchestrates visual narratives, crafts innovative designs, inspires creativity, and shapes artistic excellence daily.</p>
+          <p>Rodge@example.com</p>
+          <p><button class="button">Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+  </html>
+<style >
+   
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+.down-section {
+    background-color: #f4f4f4; 
+    padding: 20px;  
+    text-align: center;  
+    margin-top: 50px;  
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-image: url('Images/22.jpeg'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  color: rgb(0, 0, 0); 
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+
+.about-section p {
+  animation: fadeIn 1.5s ease-in-out forwards;
+ 
+  opacity: 0; 
+}
+
+</style>
+
+
+    <script>
+
+    function goBack() {
+        window.history.back();
+    }
+
+
+</script>
+

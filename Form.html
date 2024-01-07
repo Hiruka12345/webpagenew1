@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Application Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id="goBackButton">Go Back</button>
+    <div class="form-container">
+        <h2>University Application Form</h2>
+     
+        <form action="#" method="post" id="applicationForm">
+            <div class="form-group">
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="course">Select the Course:</label>
+                <select id="course" name="course" required>
+                    <optgroup label="Drama">
+                        <option value="BFA Acting">Bachelor of Fine Arts (BFA) in Acting</option>
+                        <option value="BA Theatre">Bachelor of Arts (BA) in Theatre Studies</option>
+                        <option value="Diploma Stage">Diploma in Stage Management</option>
+                        <option value="Certificate Theatre">Certificate in Theatre Design</option>
+                    </optgroup>
+                    <optgroup label="Music">
+                        <option value="BMus Performance">Bachelor of Music (BMus) in Performance</option>
+                        <option value="BA Music">Bachelor of Arts (BA) in Music</option>
+                        <option value="Diploma Music">Diploma in Music Production</option>
+                        <option value="Certificate Music">Certificate in Music Education</option>
+                    </optgroup>
+                    <optgroup label="Art">
+                        <option value="BMus Performance">Bachelor of Fine Arts (BFA) in Visual Arts</option>
+                        <option value="BA Music">Bachelor of Arts (BA) in Art History</option>
+                        <option value="Diploma Music">Diploma in Graphic Design</option>
+                        <option value="Certificate Music">Certificate in Art Therapy</option>
+                    </optgroup>
+                    <optgroup label="Sports">
+                        <option value="BMus Performance">Bachelor of Science (BSc) in Sports Science</option>
+                        <option value="BA Music">Bachelor of Physical Education (BPEd)</option>
+                        <option value="Diploma Music">Diploma in Sports Management</option>
+                        <option value="Certificate Music">Certificate in Personal Training</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="imageUpload">Upload Image:</label>
+                <input type="file" id="imageUpload" name="imageUpload" accept="image/*">
+            </div>
+
+            <div class="form-group">
+                <label>Gender:</label>
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+            </div>
+
+            <div class="form-group">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div class="form-group">
+                <label for="certifications">Certifications:</label>
+                <textarea id="certifications" name="certifications"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Telephone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Submit Application">
+            </div>
+        </form>
+
+        
+        <div class="message-box" id="messageBox">
+            <p>Form Submitted Successfully!</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('applicationForm').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+
+            document.getElementById('messageBox').classList.add('show');
+
+            
+        });
+
+
+
+    
+    document.getElementById('goBackButton').addEventListener('click', function() {
+       
+        window.location.href = 'http://127.0.0.1:5500/types.html'; 
+    });
+</script>
+
+
+
+
+
+</body>
+
+</html>
+
+
+<style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background-image: url(Images/app.svg);
+}
+
+.form-container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.message-box {
+    display: none;
+    max-width: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    text-align: center;
+    background-color: #5cb85c;
+    color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+
+.message-box.show {
+    display: block;
+    animation: slideIn 0.5s forwards;
+}
+.go-back-btn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    padding: 10px 15px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.go-back-btn:hover {
+    background-color: #bbb;
+}
+
+</style>

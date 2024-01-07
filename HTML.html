@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="badminton.css">
+  <script src="main.js" defer></script>
+  <title>Badminton Court Reservation</title>
+</head>
+<body>
+
+  <div class="navbar" id="navbar">
+    <button id="toggleNavButton">&#9776;</button>
+    <div id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="types.html">Types of Programs</a>
+      <a href="http://127.0.0.1:5500/HTML.html">Services and Facilities</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="student.html">Student Life</a>
+    </div>
+  </div>
+  
+
+
+  <h2>Badminton Court Reservation</h2>
+  <form id="reservationForm">
+    <label for="ticketType">Type of Ticket:</label><br>
+    <select id="ticketType">
+      <option value=""></option>
+      <option value="child">Child pass</option>
+      <option value="university">University pass</option>
+      <option value="outsider">Outsider pass</option>
+    </select><br><br>
+
+    <label for="numChildren">Number of Children:</label>
+    <input type="number" id="numChildren" min="0"><br><br>
+
+    <label for="numAdults">Number of Adults:</label>
+    <input type="number" id="numAdults" min="0"><br><br>
+
+    <label for="duration">Duration:</label><br>
+    <select id="duration">
+      <option value=""></option>
+      <option value="30">30 minutes</option>
+      <option value="60">1 hour</option>
+      <option value="180">3 hours</option>
+      <option value="240">4 hours</option>
+    </select><br><br>
+
+    <label for="foodTokens">Food Tokens:</label>
+    <input type="number" id="foodTokens" min="0"><br><br>
+
+    <label for="rackets">Rackets:</label>
+    <input type="number" id="rackets" min="0"><br><br>
+
+    <button type="button" onclick="calculateTotal()">Calculate Total</button><br><br>
+
+    <p>Total Cost: <span id="totalCost">0</span></p>
+    <button type="button" onclick="addToOrder()">Add to Order</button>
+    <button type="button" onclick="placeOrder()">Place Order</button><br><br>
+
+    <table border="1" style="width:100%">
+      <tr>
+        <th>Current Order</th>
+        <td id="currentOrder">No current order</td>
+      </tr>
+      <tr>
+        <th>Overall Order</th>
+        <td id="overallOrder">No overall order</td>
+      </tr>
+      <tr>
+        <th>Overall Cost</th>
+        <td id="overallCost">0 LKR</td>
+      </tr>
+    </table>
+  </form>
+  
+  <button id="nextButton">Next</button>
+
+
+<button type="button" id="addToFavouritesButton">Add to Favourites</button>
+<button type="button" id="orderFavouriteButton">Order Favourite</button>
+
+
+
+</body>
+</html>

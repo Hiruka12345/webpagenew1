@@ -1,0 +1,436 @@
+<html>
+    <body>
+
+<section class="sectioon">
+    <h1 id="h1">
+       Types
+         <br> Of
+         <br>  Programmes
+         <br>📚
+    </h1>
+</section>
+<section>
+    
+<div class="slideshow-container">
+    <div class="mySlides fade bg1">
+
+      <p class="designation">Drama Programmes 🏆</p>
+      <blockquote class="text">🎓 Bachelor of Fine Arts (BFA) in Acting: Comprehensive training in acting techniques, character development, and performance skills.
+        <br>  <br>🎓 Bachelor of Arts (BA) in Theatre Studies: Exploration of theatre history, dramatic literature, and theoretical aspects of theatre.
+        <br>  <br>🎓  Diploma in Stage Management: Focus on managing stage productions, coordinating backstage activities, and ensuring smooth performances.
+        <br> <br> 🎓 Certificate in Theatre Design: Training in set design, costume design, lighting, and sound for theatre productions.</blockquote>
+        <form action="http://127.0.0.1:5500/Form.html">
+            <input type="submit" value="Apply Now">
+        </form>
+        
+
+      <div class="numbertext">1 /4</div>
+    </div> 
+    <div class="mySlides fade bg2">
+
+      <p class="designation">Sports Programmes 🏆</p>
+      <blockquote class="text">🎓 Bachelor of Science (BSc) in Sports Science: Study of human movement, anatomy, physiology, nutrition, and sports psychology.
+        <br> <br> 🎓  Bachelor of Physical Education (BPEd): Training in physical education pedagogy, sports coaching, and sports management.
+        <br> <br> 🎓  Diploma in Sports Management: Focus on sports administration, event management, marketing, and facility management.
+        <br> <br> 🎓  Certificate in Personal Training: Preparation for careers in fitness training, wellness coaching, and sports conditioning.</blockquote>
+        <form action="http://127.0.0.1:5500/Form.html">
+            <input type="submit" value="Apply Now">
+        </form>
+        
+
+      <div class="numbertext">2 / 4</div>
+    </div> 
+    <div class="mySlides fade bg3">
+        <p class="designation">Music Programmes 🏆</p>
+      <blockquote class="text">🎓 Bachelor of Music (BMus) in Performance: Specialization in vocal or instrumental performance with a focus on technique, interpretation, and repertoire.
+        <br> <br> 🎓 Bachelor of Arts (BA) in Music: Study of music theory, history, composition, and appreciation.
+        <br> <br>  🎓 Diploma in Music Production: Training in recording, mixing, mastering, and music technology.
+        <br> <br> 🎓 Certificate in Music Education: Preparation for teaching music at various levels, including pedagogical techniques and curriculum development.</blockquote>
+        <form action="http://127.0.0.1:5500/Form.html">
+            <input type="submit" value="Apply Now">
+        </form>
+        
+
+        <div class="numbertext">3 / 4</div>
+    </div> 
+    <div class="mySlides fade bg4">
+        <p class="designation">Art Programmes 🏆</p>
+      <blockquote class="text">🎓 Bachelor of Fine Arts (BFA) in Visual Arts: Exploration of various art forms such as painting, sculpture, drawing, printmaking, and digital art.
+        <br> <br>  🎓 Bachelor of Arts (BA) in Art History: Study of art movements, styles, and historical contexts.
+        <br> <br> 🎓  Diploma in Graphic Design: Training in graphic design principles, software proficiency, and visual communication.
+        <br> <br> 🎓 Certificate in Art Therapy: Integration of art and psychology to promote healing, self-expression, and well-being.</blockquote>
+        <form action="http://127.0.0.1:5500/Form.html">
+            <input type="submit" value="Apply Now">
+        </form>
+        
+
+
+      <div class="numbertext">4 / 4</div>
+
+
+
+    </div> 
+
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+  </div> 
+  <br>
+  
+  <div class="navbar" id="navbar">
+    <button id="toggleNavButton">&#9776;</button>
+    <div id="navLinks">
+      <a href="http://127.0.0.1:5500/index.html">Home</a>
+      <a href="http://127.0.0.1:5500/types.html">Types of Programs</a>
+      <a href="http://127.0.0.1:5500/HTML.html">Services and Facilities</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="student.html">Student Life</a>
+    </div>
+  </div>
+  <style>
+    .slideshow-container {
+       
+  max-width: 900px;
+  position: absolute;
+  top: 48%;
+  left: 70%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 10px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+  
+  border-image-source: linear-gradient(to left, #FF9800, #182860);
+  width: 50%;
+
+}
+body {
+    
+    background: url('Images/types.jpeg') no-repeat center center fixed; 
+    background-size: cover; 
+    height: 100%; 
+    margin: 0; 
+    padding: 0; 
+    background-position: fixed;
+}
+
+
+
+#applyNowBtn {
+  background-color: #007bff; 
+  color: white;             
+  padding: 12px 24px;     
+  border: none;           
+  border-radius: 4px;      
+  cursor: pointer;         
+  font-size: 18px;         
+  transition: background-color 0.3s ease; 
+}
+
+
+#applyNowBtn:hover {
+  background-color: #0056b3; 
+}
+
+
+#applyNowBtn:active, 
+#applyNowBtn:focus {
+  outline: none; 
+  background-color: #003366; 
+}
+
+
+   
+    .navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000; 
+
+  padding: 10px;
+}
+
+#toggleNavButton {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#navLinks {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  right: 0;
+
+  min-width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#navLinks a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#navLinks a:hover {
+  background-color: #d29797;
+}
+
+.slideshow-container .mySlides {
+  min-height: 490px;
+  display: none;
+  padding: 30px 10px;
+}
+@media (min-width: 768px) {
+  .slideshow-container .mySlides {
+    min-height: 370px;
+  }
+}
+@media (min-width: 768px) {
+  .slideshow-container .mySlides {
+    padding: 45px 35px;
+  }
+}
+.slideshow-container .mySlides .numbertext {
+  color: #000000;
+  font-size: 12px;
+  padding: 8px 12px;
+  text-align: center;
+}
+.slideshow-container .mySlides .text {
+  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  color: #000000;
+  font-size: 18px;
+  padding: 8px 4px;
+}
+@media (min-width: 768px) {
+  .slideshow-container .mySlides .text {
+    padding: 8px 12px;
+  }
+}
+.slideshow-container .mySlides img {
+  width: 60px;
+  display: block;
+  margin: 0 auto;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-radius: 24px 8px 24px 8px;
+}
+.slideshow-container .mySlides .designation {
+  text-align: center;
+  font-size: 24px;
+  color: rgba(51, 0, 255, 0.788);
+  animation: dance 2s infinite; 
+}
+.slideshow-container .bg1 {
+    background: #7f53ac;
+  background-image: url("../img/pen-3.png");
+  
+  background-image: url("Images/Drama.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+}
+.slideshow-container .bg2 {
+    background: #7f53ac;
+  background-image: url("../img/pen-3.png");
+  
+  background-image: url("Images/Sports.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover;
+}
+.slideshow-container .bg3 {
+  background: #7f53ac;
+  background-image: url("../img/pen-3.png");
+  
+  background-image: url("Images/Music.jpeg");
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover; 
+}
+
+.slideshow-container .bg4 {
+  background: #7f53ac;
+  background-image: url("../img/pen-3.png");
+  
+  background-image: url("Images/Art.webp");
+  background-repeat: no-repeat;
+  background-position: center center; 
+  background-size: cover; 
+}
+
+.slideshow-container .prev, .slideshow-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.slideshow-container .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.slideshow-container .prev:hover, .slideshow-container .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media only screen and (max-width: 300px) {
+  .prev, .next, .text {
+    font-size: 11px;
+  }
+}
+
+@keyframes dance {
+  0% { transform: translateY(0); }
+  20% { transform: translateY(-10px); }
+  40% { transform: translateY(0); }
+  60% { transform: translateY(10px); }
+  80% { transform: translateY(0); }
+  100% { transform: translateY(-5px); }
+}
+
+
+
+.sectioon{
+background-color: #d6d3a9;
+    height: 1600px;
+
+    background-size: cover;
+    position: fixed;
+
+}
+
+
+
+#h1{
+    padding:0;
+    text-align: center;
+    font-size: 110px;
+    padding:90px 0;
+    color: rgb(0, 0, 0);
+}
+
+
+
+  </style>
+
+  <script>
+
+
+const toggleNavButton = document.getElementById('toggleNavButton');
+const navLinks = document.getElementById('navLinks');
+
+console.log(toggleNavButton);  
+console.log(navLinks);         
+
+
+toggleNavButton.addEventListener('click', function() {
+  console.log("Button clicked!"); 
+  
+  if (navLinks.style.display === "block") {
+    console.log("Hiding navLinks"); 
+    navLinks.style.display = "none";
+  } else {
+    console.log("Showing navLinks"); 
+    navLinks.style.display = "block";
+  }
+});
+
+
+
+
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+
+
+document.getElementById('applyNowBtn1').addEventListener('click', function() {
+  window.location.href = 'http://127.0.0.1:5500/Form.html'; 
+});
+document.getElementById('applyNowBtn2').addEventListener('click', function() {
+  window.location.href = 'http://127.0.0.1:5500/Form.html'; 
+});
+document.getElementById('applyNowBtn3').addEventListener('click', function() {
+  window.location.href = 'http://127.0.0.1:5500/Form.html';
+}); 
+document.getElementById('applyNowBtn4').addEventListener('click', function() {
+  window.location.href = 'http://127.0.0.1:5500/Form.html'; 
+});
+
+  </script>

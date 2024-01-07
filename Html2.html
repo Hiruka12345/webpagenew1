@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Second Page - Badminton Court Reservation</title>
+  
+  <style>
+   body {
+      font-family: Arial, sans-serif;
+      background-image:url(Images/22.jpeg);
+   }
+
+    table {
+      width: 70%;
+      
+    }
+    @keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+h2 {
+  animation: fadeIn 1.5s forwards; 
+}
+    .button-container {
+      text-align: center; 
+      padding-top: 20px;  
+    }
+
+    .button-container button {
+      margin: 0 10px; 
+    }
+
+
+
+    
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1000; 
+
+  padding: 10px;
+}
+
+#toggleNavButton {
+  background: none;
+  border: none;
+  color: #000000;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#navLinks {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  right: 0;
+
+  min-width: 150px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#navLinks a {
+  display: block;
+  padding: 10px;
+  color: #000000;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#navLinks a:hover {
+  background-color: #555;
+}
+
+  </style>
+</head>
+<body>
+
+  <div class="navbar" id="navbar">
+    <button id="toggleNavButton">&#9776;</button> 
+    <div id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#typesOfPrograms">Types of Programs</a>
+      <a href="http://127.0.0.1:5500/HTML.html">Services and Facilities</a>
+      <a href="faculty.html">Faculty</a>
+      <a href="student.html">Student Life</a>
+    </div>
+  </div>
+  
+
+
+
+
+
+  <h2>Second Page - Reservation Details</h2>
+  
+  <table border="1" style="width:70%">
+    <tr>
+        <th>Current Order</th>
+        <td id="currentOrder">No current order</td>
+    </tr>
+    <tr>
+        <th>Overall Order</th>
+        <td id="overallOrder">No overall order</td>
+    </tr>
+    <tr>
+        <th>Overall Cost</th>
+        <td id="overallCost">0 LKR</td>
+    </tr>
+    <tr>
+      <td colspan="2" class="button-container">
+         
+          <button onclick="confirmOrder()">Confirm Order</button>
+          
+          <button onclick="goToDonationPage()">For Donation Page</button>
+      </td>
+  </tr>
+  </table>
+
+  
+
+  <script>
+
+document.getElementById('toggleNavButton').addEventListener('click', function() {
+  const navLinks = document.getElementById('navLinks');
+  if (navLinks.style.display === 'none' || navLinks.style.display === '') {
+    navLinks.style.display = 'block';
+  } else {
+    navLinks.style.display = 'none';
+  }
+});
+
+
+
+
+
+
+
+   
+    function populateFromLocalStorage() {
+       
+        const currentOrder = localStorage.getItem('currentOrder');
+        const overallOrder = localStorage.getItem('overallOrder');
+        const overallCost = localStorage.getItem('overallCost');
+
+       
+        if (currentOrder) {
+            document.getElementById('currentOrder').innerHTML = currentOrder;
+        }
+        
+        if (overallOrder) {
+            document.getElementById('overallOrder').innerHTML = overallOrder;
+        }
+        
+        if (overallCost) {
+            document.getElementById('overallCost').innerText = overallCost;
+        }
+    }
+
+
+    populateFromLocalStorage();
+
+
+    function confirmOrder() {
+        alert('Order confirmed!'); 
+    }
+
+
+    function goToDonationPage() {
+        window.location.href = 'http://127.0.0.1:5500/11.html'; 
+    }
+  </script>
+</body>
+</html>
